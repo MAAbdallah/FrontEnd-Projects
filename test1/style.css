@@ -1,0 +1,229 @@
+*{
+    padding:0px;
+    margin:0px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.clearfix{
+    clear:both;
+}
+
+/* start header*/
+header{
+    background-color: #333;
+    color: #DDD;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+}
+/* end header*/
+
+/*Start nav*/
+nav{
+    width:auto;
+    height:50px;
+    /*border: 2px solid #000;*/
+    background-color:darkgray;
+    padding-top:20px;
+    padding-right:60px;
+    text-align:center;
+    /*direction:rtl;*/
+    
+}
+
+nav a{
+    color:aliceblue;
+    text-decoration:none;
+    padding: 10px;
+    
+}
+nav a:after{
+    content :" |";
+}
+nav a:last-child:after{
+    content: "";
+}
+
+nav a:hover{
+    text-decoration:underline;
+    color: yellow;
+}
+
+/*End nav*/
+
+.wrapper{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+/*Start aside*/
+
+aside{
+    width:20%;
+    /*height: 487px;*/
+    height: 100%;
+    position: absolute;
+    /*top:0.5%;*/
+    left: 1em;
+    padding:30px;
+    border: 3px solid #ccc ;
+    color:darkgray;
+    background-color:whitesmoke;
+    float: left;
+    overflow: auto;
+    
+}
+aside ul{
+    list-style-type: none;
+
+}
+aside ul li{
+    line-height: 1.6;
+}
+aside ul li a{
+    text-decoration: none;
+    color:darkgray;
+}
+aside ul li a:hover{
+    background-color: black;
+    color: white;
+}
+/*end aside*/
+
+/*Start container*/
+
+.container{
+    width:80%;
+    float:right;
+
+}
+
+.container article {
+    background-color: #f6f6f6;
+    border:1px solid #ccc;
+    margin-left:50px;
+    width:280px;
+    height: 350px;
+    float: left;
+}
+
+.container article img{
+    width:280px;
+    height:300px;
+}
+.container article img:hover{
+     /*-webkit-filter: grayscale(100%); *//* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+.container article p{
+    margin: 10px;
+    height: 30px;
+    text-align: center;
+    color: darkgray;
+    font-weight: bold;
+    overflow: auto;
+}
+.container article p:hover{
+    background-color:dimgrey;
+    font-size: 20px;
+    overflow: auto;
+}
+
+/*end container*/
+
+/*start about */
+.about{
+    background-color: gray;
+    height:400px;
+    margin-bottom: 10px;
+}
+.about h2{
+    color: lightsteelblue;
+    font-size: 50px;
+}
+.about h2:hover{
+    text-align: center;
+    text-decoration:underline;
+    color: darkgray ;
+}
+.about .about_paragraphs{
+    width: 70%;
+    float: right;
+    padding:20px;
+    line-height: 2;
+    position: relative;
+    top: 10%;
+}
+.about .about_paragraphs ul{
+padding-left:10px;
+}
+
+.about .about_paragraphs ul li{
+    color: darkgray;
+    text-align: left;
+    font-size:30px;
+}
+.about .image{
+    width: 30%;
+    height: 300px;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+.about .image img{
+    width:100%;
+    height: 300px;
+    padding: 10px;
+}
+.about .image .second { 
+        display: none;
+        position: absolute;
+        top: auto;
+        left: 0;
+        z-index: 99;
+}
+.about .image:hover .second{
+    display: inline;
+}
+/*end about */
+
+/*start anime*/
+
+.animes h2{
+    color: brown;
+    /*color: cadetblue;*/
+    text-decoration: underline;
+    text-align: center;
+}
+.single_anime{
+    width: 25%;
+     margin:10px;
+    margin-left: 80px;
+    float: left;
+    background-color: azure;
+}
+.animes .single_anime img{
+    height: 300px;
+    width:100%;
+}
+.animes .single_anime p{
+    text-align: center;
+}
+.animes .single_anime p span{
+    color: brown;
+}
+
+/*end anime*/
+
+/*Start footer*/
+
+footer{
+    background-color: #333;
+    color: #DDD;
+    padding: 10px;
+    text-align: center;
+}
+/*end footer*/
